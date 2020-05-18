@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage NavigationPage.BackButtonTitle=""
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="HOME"
+    x:Class="UserValidation.Updated.Views.LandingPage.LandingPage">
+    <StackLayout BackgroundColor="WhiteSmoke">
+        <StackLayout Spacing="10" VerticalOptions="Start" Margin="15,100,15,0">
+            <Label Text="Enter your ID number"/>
+            <Entry Placeholder="ID Number" ReturnType="Done" Text="{Binding IDNumber}"/>
+            <ActivityIndicator VerticalOptions="Center" HorizontalOptions="Center" IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" />
+            <Button Text="Submit" BackgroundColor="DarkCyan" TextColor="White" Margin="0,50,0,0" Command="{Binding SubmitCommand}" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

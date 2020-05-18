@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{948F58D7-B05A-4F06-A80E-9A0690DB8CA9}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UserValidation.Updated.Android/Resources/values/styles.xml">
+    <Files>
+      <File FileName="UserValidation.Updated/ViewModels/LandingViewModel/LandingPageViewModel.cs" Line="30" Column="14" />
+      <File FileName="UserValidation.Updated/ViewModels/UserDetailsViewModel/UserDetailsPageViewModel.cs" Line="29" Column="10" />
+      <File FileName="UserValidation.Updated/App.xaml.cs" />
+      <File FileName="UserValidation.Updated/AssemblyInfo.cs" />
+      <File FileName="UserValidation.Updated.Android/Properties/AssemblyInfo.cs" Line="24" Column="21" />
+      <File FileName="UserValidation.Updated.Android/Resources/values/styles.xml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="UserValidation.Updated" expanded="True">
+            <Node name="UserValidation.Updated" expanded="True">
+              <Node name="ViewModels" expanded="True">
+                <Node name="UserDetailsViewModel" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="UserValidation.Updated.Android" expanded="True">
+              <Node name="Resources" expanded="True">
+                <Node name="values" expanded="True">
+                  <Node name="styles.xml" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.UserValidation.Updated.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.50B7CD02-89D6-44AA-B636-1BCFAAC51600" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.UserValidation.Updated.UITests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.UserValidation.Updated.Android PreferredExecutionTarget="Android.pixel_2_q_10_0_-_api_29" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

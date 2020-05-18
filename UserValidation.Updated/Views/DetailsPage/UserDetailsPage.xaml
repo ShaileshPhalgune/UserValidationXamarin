@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="DETAILS"
+    x:Class="UserValidation.Updated.Views.DetailsPage.UserDetailsPage">
+    <ScrollView BackgroundColor="WhiteSmoke">
+        <StackLayout Spacing="15" Margin="15">
+            <StackLayout Spacing="5">
+                <Label Text="Name"/>
+                <Label Text="{Binding Name}" TextColor="DimGray"/>
+                <BoxView BackgroundColor="SlateGray" HeightRequest="0.5" VerticalOptions="End" Margin="0,10,0,0"/>
+            </StackLayout>
+
+             <StackLayout Spacing="5">                
+                <Label Text="Height"/>
+                <Label Text="{Binding Height}" TextColor="DimGray"/>
+                 <BoxView BackgroundColor="SlateGray" HeightRequest="0.5" VerticalOptions="End" Margin="0,10,0,0"/>
+             </StackLayout>
+
+            <StackLayout Spacing="5">                
+                <Label Text="Weight"/>
+                <Label Text="{Binding Weight}" TextColor="DimGray" />
+                <BoxView BackgroundColor="SlateGray" HeightRequest="0.5" VerticalOptions="End" Margin="0,10,0,0"/>
+             </StackLayout>
+           
+             <StackLayout Spacing="5">
+                <Label Text="Hair Colour"/>
+                <Label Text="{Binding HairColour}" TextColor="DimGray" />
+                <BoxView BackgroundColor="SlateGray" HeightRequest="0.5" VerticalOptions="Start" Margin="0,10,0,0"/>
+             </StackLayout>
+
+            <StackLayout Spacing="5">
+                <Label Text="Skin Colour"/>
+                <Label Text="{Binding SkinColour}" TextColor="DimGray" />
+                <BoxView BackgroundColor="SlateGray" HeightRequest="0.5" VerticalOptions="End" Margin="0,10,0,0"/>
+             </StackLayout>
+
+             <StackLayout Spacing="5">
+                <Label Text="Eye Colour"/>
+                <Label Text="{Binding EyeColour}" TextColor="DimGray" />
+                <BoxView BackgroundColor="SlateGray" HeightRequest="0.5" VerticalOptions="End" Margin="0,10,0,0"/>
+             </StackLayout>
+
+             <StackLayout Spacing="5">
+                <Label Text="Birth Year"/>
+                <Label Text="{Binding BirthYear}" TextColor="DimGray" />
+                <BoxView BackgroundColor="SlateGray" HeightRequest="0.5" VerticalOptions="End" Margin="0,10,0,0"/>
+             </StackLayout>
+
+             <StackLayout Spacing="5">
+                <Label Text="Gender"/>
+                <Label Text="{Binding Gender}" TextColor="DimGray" />
+                <BoxView BackgroundColor="SlateGray" HeightRequest="0.5" VerticalOptions="End" Margin="0,10,0,0"/>
+             </StackLayout>
+
+            <StackLayout Spacing="5">
+                <Label Text="Profile Created Date"/>
+                <Label Text="{Binding ProfileCreationDate}" TextColor="DimGray" />
+                <BoxView BackgroundColor="SlateGray" HeightRequest="0.5" VerticalOptions="End" Margin="0,10,0,0"/>
+             </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
