@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using UserValidatation.Updated.Models;
-using UserValidatation.Updated.Services.InterFace;
+using UserValidatation.Updated.Gateway.Interface;
 
 namespace UserValidation.Updated.Models
 {
@@ -15,7 +15,7 @@ namespace UserValidation.Updated.Models
 
         #region CONSTRUCTION
 
-        public UserDataModel(IGetUserDetails Service)
+        public UserDataModel(IUserDetails Service)
         {
             _service = Service;
         }
@@ -48,7 +48,7 @@ namespace UserValidation.Updated.Models
 
         #region FIELDS
 
-        private IGetUserDetails _service { get; set; }
+        private IUserDetails _service { get; set; }
 
         #endregion
     }

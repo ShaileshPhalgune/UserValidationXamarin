@@ -1,6 +1,6 @@
 ﻿using System.Windows.Input;
-using UserValidatation.Updated.Services.API;
-using UserValidatation.Updated.Services.Service;
+using UserValidatation.Updated.Gateway.API;
+using UserValidatation.Updated.Gateway.Service;
 using UserValidation.Updated.Models;
 using UserValidation.Updated.ViewModels.BaseViewModel;
 using UserValidation.Updated.ViewModels.UserDetailsViewModel;
@@ -43,7 +43,7 @@ namespace UserValidation.Updated.ViewModels.LandingViewModel
         {
             //_navigationService = NavigatonService;
             SubmitCommand = new Command(SubmitButtonClicked);
-            DataModel = new UserDataModel(new ServiceGetUserDetails());
+            DataModel = new UserDataModel(new  UserDetails());
         }
 
         #endregion
@@ -62,12 +62,10 @@ namespace UserValidation.Updated.ViewModels.LandingViewModel
 
                 if (result)
                 {
-                    //await _navigationService.PushAsync(new UserDetailsPage(DataModel));
                     await NavigationService.PushAsync(new UserDetailsPageViewModel(DataModel));
                 }
                 else
                 {
-                    //await ShowErrorAsync("User Not Found.", "Information", "OK");
                     await DependencyService.Get<AlertService>().ShowErrorAsync("User Not Found.", "Information", "OK");
                 }
             }

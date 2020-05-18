@@ -1,5 +1,5 @@
 ﻿using System;
-using UserValidatation.Updated.Services.DTO;
+using UserValidatation.Updated.Gateway.DTO;
 
 namespace UserValidatation.Updated.Models
 {

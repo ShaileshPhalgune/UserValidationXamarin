@@ -20,16 +20,16 @@
     <Folder Include="Views\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Models\" />
-    <Folder Include="Services\" />
+    <Folder Include="Gateway\" />
     <Folder Include="Views\LandingPage\" />
     <Folder Include="Views\DetailsPage\" />
     <Folder Include="ViewModels\LandingViewModel\" />
     <Folder Include="ViewModels\UserDetailsViewModel\" />
     <Folder Include="ViewModels\BaseViewModel\" />
-    <Folder Include="Services\DTO\" />
-    <Folder Include="Services\API\" />
-    <Folder Include="Services\InterFace\" />
-    <Folder Include="Services\Service\" />
+    <Folder Include="Gateway\DTO\" />
+    <Folder Include="Gateway\API\" />
+    <Folder Include="Gateway\Interace\" />
+    <Folder Include="Gateway\Service\" />
     <Folder Include="Constant\" />
     <Folder Include="IOC\" />
   </ItemGroup>

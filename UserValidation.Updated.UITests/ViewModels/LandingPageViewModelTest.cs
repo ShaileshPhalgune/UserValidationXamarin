@@ -37,22 +37,22 @@ namespace UserValidation.Updated.UITests.ViewModels
         [TestMethod]
         public void RunUserValidation()
         {
-            UserDetailsServiceFake = A.Fake<IGetUserDetails>();
+            UserDetailsServiceFake = A.Fake<IUserDetails>();
             
             //A.CallTo(() => UserDetailsServiceFake.GetUserDetails(A<string>.Ignored)).MustHaveHappened();
 
-            var fakeShop = A.Fake<ServiceGetUserDetails>(options => options.Implements<IGetUserDetails>());
-            A.CallTo(() => ((IGetUserDetails)fakeShop).GetUserDetails(A<string>.Ignored)).MustHaveHappened();
+            var fakeShop = A.Fake<UserValidatation.Updated.Services.API.UserDetails>(options => options.Implements<IUserDetails>());
+            A.CallTo(() => ((IUserDetails)fakeShop).GetUserDetails(A<string>.Ignored)).MustHaveHappened();
         }
 
         #endregion
 
         #region FIELDS
 
-        private ServiceGetUserDetails GetUserDetailsFake;
-        private IGetUserDetails UserDetailsServiceFake;
+        private UserValidatation.Updated.Services.API.UserDetails GetUserDetailsFake;
+        private IUserDetails UserDetailsServiceFake;
         private UserDataModel DataModel;
-        private UserDetails UserData;
+        private UserValidatation.Updated.Models.UserDetails UserData;
 
         #endregion
     }

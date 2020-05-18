@@ -1,5 +1,5 @@
 ﻿using UserValidatation.Updated.IOC;
-using UserValidatation.Updated.Services.Service;
+using UserValidatation.Updated.Gateway.Service;
 using UserValidation.Updated.ViewModels.LandingViewModel;
 using UserValidation.Updated.ViewModels.UserDetailsViewModel;
 using UserValidation.Updated.Views.DetailsPage;
