@@ -39,7 +39,7 @@ namespace UserValidation.Updated.ViewModels.UserDetailsViewModel
 
             BirthYear = DataModel.UserDetails.BirthYear;
             Gender = DataModel.UserDetails.Gender;
-            //TODO:- Change the date format 
+            
             var DateReadable = ConvertDateToReadableFormat(DataModel.UserDetails.ProfileCreatedDate);
             ProfileCreationDate = DateReadable;
         }
