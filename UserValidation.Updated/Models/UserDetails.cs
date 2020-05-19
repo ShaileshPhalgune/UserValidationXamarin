@@ -22,7 +22,7 @@ namespace UserValidatation.Updated.Models
 
         #region METHODS
 
-        internal void CreateDataModelFromResponse(UserDataResponse response)
+        public void CreateDataModelFromResponse(UserDataResponse response)
         {
             if (response != null)
             {

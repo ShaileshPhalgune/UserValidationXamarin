@@ -9,8 +9,10 @@ using Xamarin.Forms;
 namespace UserValidation.Updated.ViewModels.LandingViewModel
 {
     public class LandingPageViewModel:ViewModelBase
-    {        
+    {
         #region PROPERTIES
+
+        public UserDataModel DataModel;
 
         public string IDNumber
         {
@@ -43,14 +45,14 @@ namespace UserValidation.Updated.ViewModels.LandingViewModel
         {
             //_navigationService = NavigatonService;
             SubmitCommand = new Command(SubmitButtonClicked);
-            DataModel = new UserDataModel(new  UserDetails());
+            DataModel = new UserDataModel();
         }
 
         #endregion
 
         #region METHODS
 
-        private async void SubmitButtonClicked()
+        public async void SubmitButtonClicked()
         {
             if (!string.IsNullOrEmpty(IDNumber))
             {
@@ -76,8 +78,7 @@ namespace UserValidation.Updated.ViewModels.LandingViewModel
         #region FIELDS
 
         private string _IdNumber;
-        private UserDataModel DataModel;
-
+        
         #endregion
     }
 }

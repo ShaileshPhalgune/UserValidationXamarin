@@ -54,10 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ViewModels\LandingPageViewModelTest.cs" />
-    <Compile Include="ViewModels\UserDetailsPageViewModelTest.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ViewModels\" />
+    <Compile Include="ViewModels\UserDetailsPageViewModelTests.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

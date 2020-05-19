@@ -32,6 +32,8 @@
     <Folder Include="Gateway\Service\" />
     <Folder Include="Constant\" />
     <Folder Include="IOC\" />
+    <Folder Include="ResponseGenerators\" />
+    <Folder Include="ResponseGenerators\UserDetailsResponseGenerator\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="MainPage.xaml" />

@@ -1,40 +1,55 @@
 ﻿<Properties StartupConfiguration="{B61AC65F-75C1-420D-AF83-E1BE2AE20D51}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="UserValidation.Updated/ViewModels/LandingViewModel/LandingPageViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UserValidation.Updated/App.xaml.cs">
     <Files>
-      <File FileName="UserValidation.Updated/Models/UserDataModel.cs" Line="4" Column="39" />
-      <File FileName="UserValidation.Updated/Models/UserDetails.cs" Line="2" Column="39" />
-      <File FileName="UserValidation.Updated/ViewModels/LandingViewModel/LandingPageViewModel.cs" Line="3" Column="39" />
+      <File FileName="UserValidation.Updated.UITests/ViewModels/LandingPageViewModelTest.cs" Line="76" Column="13" />
+      <File FileName="UserValidation.Updated/App.xaml.cs" Line="26" Column="12" />
+      <File FileName="UserValidation.Updated/Gateway/Service/NavigationService.cs" Line="13" Column="17" />
+      <File FileName="UserValidation.Updated/ViewModels/LandingViewModel/LandingPageViewModel.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="UserValidation.Updated" expanded="True">
             <Node name="UserValidation.Updated" expanded="True">
-              <Node name="Constant" expanded="True" />
-              <Node name="Gateway" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="ViewModels" expanded="True">
-                <Node name="LandingViewModel" expanded="True">
-                  <Node name="LandingPageViewModel.cs" selected="True" />
-                </Node>
+              <Node name="Gateway" expanded="True">
+                <Node name="API" expanded="True" />
+                <Node name="Service" expanded="True" />
               </Node>
-              <Node name="App.xaml" expanded="True" />
+              <Node name="ViewModels" expanded="True">
+                <Node name="LandingViewModel" expanded="True" />
+                <Node name="UserDetailsViewModel" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True">
+                <Node name="App.xaml.cs" selected="True" />
+              </Node>
             </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="UserValidation.Updated" expanded="True">
             <Node name="UserValidation.Updated.UITests" expanded="True">
-              <Node name="ViewModels" expanded="True" />
+              <Node name="UserValidation.Updated.UITests.ViewModels" expanded="True">
+                <Node name="LandingPageViewModelTest" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.UserValidation.Updated.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.50B7CD02-89D6-44AA-B636-1BCFAAC51600" />
+  <MonoDevelop.Ide.ItemProperties.UserValidation.Updated.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.B556F865-B319-4F91-A9D7-E522A3913AC8" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.UserValidation.Updated.UITests PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.UserValidation.Updated.Android PreferredExecutionTarget="Android.pixel_2_q_10_0_-_api_29" />
+  <MonoDevelop.Ide.ItemProperties.UserValidation.Updated.Android PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/absp823/Documents/XamarinProjects/NS.Assignment/UserValidation.Updated/UserValidation.Updated.UITests/LandingPageViewModelTests.cs" relfile="UserValidation.Updated.UITests/LandingPageViewModelTests.cs" line="10" column="1" />
+      <Catchpoint exceptionName="System.Exception" includeSubclasses="True" />
+      <Breakpoint file="/Users/absp823/Documents/XamarinProjects/NS.Assignment/UserValidation.Updated/UserValidation.Updated.UITests/ViewModels/LandingPageViewModelTest.cs" relfile="UserValidation.Updated.UITests/ViewModels/LandingPageViewModelTest.cs" line="71" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

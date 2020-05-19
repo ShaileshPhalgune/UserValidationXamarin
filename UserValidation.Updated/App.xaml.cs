@@ -21,7 +21,7 @@ namespace UserValidation.Updated
         {
             SimpleIoC.RegisterPage<LandingPageViewModel, LandingPage>();
             SimpleIoC.RegisterPage<UserDetailsPageViewModel, UserDetailsPage>();
-            DependencyService.Register<AlertService>();
+            DependencyService.Register<AlertService>();           
         }
 
         protected override void OnStart()

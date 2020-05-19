@@ -2,6 +2,8 @@
 using System.Threading.Tasks;
 using UserValidatation.Updated.Models;
 using UserValidatation.Updated.Gateway.Interface;
+using Xamarin.Forms;
+using UserValidatation.Updated.Gateway.API;
 
 namespace UserValidation.Updated.Models
 {
@@ -15,19 +17,20 @@ namespace UserValidation.Updated.Models
 
         #region CONSTRUCTION
 
-        public UserDataModel(IUserDetails Service)
+        public UserDataModel()
         {
-            _service = Service;
+            _service = new GetUserDetails();
         }
 
         #endregion
 
         #region METHODS
 
-        public async Task<bool> GetUserInfoWithIdAsync(String UserId)
+        public async Task<bool> GetUserInfoWithIdAsync(string UserId)
         {
             var Id = UserId;
-            var response = await _service.GetUserDetails(Id);
+
+            var response = await _service.GetUserDetailsForId(Id);
 
             if (response != null)
             {
@@ -48,7 +51,7 @@ namespace UserValidation.Updated.Models
 
         #region FIELDS
 
-        private IUserDetails _service { get; set; }
+        private GetUserDetails _service { get; set; }
 
         #endregion
     }
