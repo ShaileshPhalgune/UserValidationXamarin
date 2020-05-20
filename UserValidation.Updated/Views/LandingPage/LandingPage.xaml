@@ -9,7 +9,10 @@
             <Label Text="Enter your ID number"/>
             <Entry Placeholder="ID Number" ReturnType="Done" Text="{Binding IDNumber}"/>
             <ActivityIndicator VerticalOptions="Center" HorizontalOptions="Center" IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" />
-            <Button Text="Submit" BackgroundColor="DarkCyan" TextColor="White" Margin="0,50,0,0" Command="{Binding SubmitCommand}" />
+            <StackLayout Orientation="Horizontal" Spacing="5">
+            <Button Text="Get Content" HorizontalOptions="FillAndExpand" BackgroundColor="DarkCyan" TextColor="White" Margin="0,50,0,0" Command="{Binding SubmitCommand}" />
+            <Button Text="Validate SA User" HorizontalOptions="FillAndExpand" BackgroundColor ="DarkCyan" TextColor="White" Margin="0,50,0,0" Command="{Binding IdValidationCommand}" />
+            </StackLayout>
         </StackLayout>
     </StackLayout>
 </ContentPage>

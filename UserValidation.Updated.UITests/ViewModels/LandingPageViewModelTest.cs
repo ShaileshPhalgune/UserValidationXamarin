@@ -8,9 +8,8 @@ using System.Net.Http;
 using System.Net;
 using UserValidatation.Updated.Constant;
 using UserValidation.Updated.ResponseGenerators.UserDetailsResponseGenerator;
-using UserValidatation.Updated.Gateway.Service;
 using UserValidation.Updated.ViewModels.UserDetailsViewModel;
-using Xamarin.Forms;
+using UserValidation.Updated.Gateway.Interace;
 
 namespace UserValidation.Updated.UITests.ViewModels
 {
@@ -26,6 +25,7 @@ namespace UserValidation.Updated.UITests.ViewModels
         #region PROPERTIES
 
         public LandingPageViewModel ViewModel { get; set; }
+        public INavigationn _service { get; set; }
 
         #endregion
 
@@ -34,7 +34,8 @@ namespace UserValidation.Updated.UITests.ViewModels
         [Test,Order(1)]
         public void Initialize()
         {
-            ViewModel = new LandingPageViewModel();
+            _service = A.Fake<INavigationn>();         
+            ViewModel = new LandingPageViewModel(_service);
             DataModel = new UserDataModel();
         }
 
@@ -63,9 +64,15 @@ namespace UserValidation.Updated.UITests.ViewModels
         }
 
         [Test,Order(3)]
-        public void MoveToDetailsScreen()
+        public async Task MoveToDetailsScreenAsync()
         {
-                       
+            var response = new DetailsResponseGenerator().ForName().ForHeight().ForWeight().ForHairColour().ForSkinColour().ForEyeColour().ForBirthYear().ForGender().ForProfileCreationDate().Build();
+            DataModel = new UserDataModel();
+            DataModel.UserDetails = response;             
+             
+            ViewModel.SubmitCommand.Execute(null);
+
+            //A.CallTo(() => _service.PushAsync(new UserDetailsPageViewModel(DataModel))).MustHaveHappened();
         }
 
         #endregion

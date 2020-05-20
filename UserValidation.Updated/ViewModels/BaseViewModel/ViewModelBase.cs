@@ -1,5 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
+using UserValidation.Updated.Gateway.Interace;
+using UserValidation.Updated.Gateway.Service;
 
 namespace UserValidation.Updated.ViewModels.BaseViewModel
 {
@@ -8,6 +10,7 @@ namespace UserValidation.Updated.ViewModels.BaseViewModel
         #region PROPERTIES
 
         public event PropertyChangedEventHandler PropertyChanged;
+       
 
         #endregion
 
@@ -15,7 +18,6 @@ namespace UserValidation.Updated.ViewModels.BaseViewModel
 
         public ViewModelBase()
         {
-
         }
 
         #endregion

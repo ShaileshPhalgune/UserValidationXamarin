@@ -1,7 +1,10 @@
-﻿using System.Windows.Input;
+﻿using System.Threading.Tasks;
+using System.Windows.Input;
 using UserValidatation.Updated.Gateway.API;
 using UserValidatation.Updated.Gateway.Service;
+using UserValidation.Updated.Gateway.Interace;
 using UserValidation.Updated.Models;
+using UserValidation.Updated.SAIDValidator;
 using UserValidation.Updated.ViewModels.BaseViewModel;
 using UserValidation.Updated.ViewModels.UserDetailsViewModel;
 using Xamarin.Forms;
@@ -13,6 +16,7 @@ namespace UserValidation.Updated.ViewModels.LandingViewModel
         #region PROPERTIES
 
         public UserDataModel DataModel;
+        public INavigationn _service { get; set; }
 
         public string IDNumber
         {
@@ -36,15 +40,18 @@ namespace UserValidation.Updated.ViewModels.LandingViewModel
         }
 
         public ICommand SubmitCommand { get; }
+        public ICommand IdValidationCommand { get; }
 
         #endregion
 
         #region CONSTRUCTION
 
-        public LandingPageViewModel()
+        public LandingPageViewModel(INavigationn NavigationService)
         {
-            //_navigationService = NavigatonService;
+            _service = NavigationService;
+
             SubmitCommand = new Command(SubmitButtonClicked);
+            IdValidationCommand = new Command(ValidateIdNumber);
             DataModel = new UserDataModel();
         }
 
@@ -64,12 +71,24 @@ namespace UserValidation.Updated.ViewModels.LandingViewModel
 
                 if (result)
                 {
-                    await NavigationService.PushAsync(new UserDetailsPageViewModel(DataModel));
+                    await _service.PushAsync(new UserDetailsPageViewModel(DataModel));                    
                 }
                 else
                 {
                     await DependencyService.Get<AlertService>().ShowErrorAsync("User Not Found.", "Information", "OK");
                 }
+            }
+        }
+
+        public async void ValidateIdNumber()
+        {
+            if(IDNumberValidator.ValidateId(IDNumber))
+            {
+                await DependencyService.Get<AlertService>().ShowErrorAsync("This is a valid south african ID Number", "Information", "OK");
+            }
+            else
+            {
+                await DependencyService.Get<AlertService>().ShowErrorAsync("This is not a south african ID Number", "Information", "OK");
             }
         }
 
