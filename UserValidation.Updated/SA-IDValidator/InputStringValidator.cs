@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Globalization;
+
 namespace UserValidation.Updated.SAIDValidator
 {
     public static class InputStringValidator
@@ -19,6 +21,11 @@ namespace UserValidation.Updated.SAIDValidator
             }
 
             return false;
+        }
+
+        public static bool ValidateDateOfBirth(string dateInString)
+        {
+            return DateTime.TryParseExact(dateInString, "yyMMdd", CultureInfo.InvariantCulture, DateTimeStyles.AssumeLocal, out _);
         }
     }
 }

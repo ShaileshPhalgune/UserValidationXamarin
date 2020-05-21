@@ -48,15 +48,15 @@
 /Users/absp823/Documents/XamarinProjects/NS.Assignment/UserValidation.Updated/UserValidation.Updated.iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Platform.iOS.dll
 /Users/absp823/Documents/XamarinProjects/NS.Assignment/UserValidation.Updated/UserValidation.Updated.iOS/bin/iPhoneSimulator/Debug/UserValidation.Updated.pdb
 /Users/absp823/Documents/XamarinProjects/NS.Assignment/UserValidation.Updated/UserValidation.Updated.iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Platform.iOS.pdb
-/Users/absp823/Documents/XamarinProjects/NS.Assignment/UserValidation.Updated/UserValidation.Updated.iOS/obj/iPhoneSimulator/Debug/UserValidation.Updated.iOS.csprojAssemblyReference.cache
-/Users/absp823/Documents/XamarinProjects/NS.Assignment/UserValidation.Updated/UserValidation.Updated.iOS/obj/iPhoneSimulator/Debug/UserValidation.Updated.iOS.csproj.CoreCompileInputs.cache
-/Users/absp823/Documents/XamarinProjects/NS.Assignment/UserValidation.Updated/UserValidation.Updated.iOS/obj/iPhoneSimulator/Debug/XamlC.stamp
-/Users/absp823/Documents/XamarinProjects/NS.Assignment/UserValidation.Updated/UserValidation.Updated.iOS/obj/iPhoneSimulator/Debug/UserValidation.Updated.iOS.csproj.CopyComplete
-/Users/absp823/Documents/XamarinProjects/NS.Assignment/UserValidation.Updated/UserValidation.Updated.iOS/obj/iPhoneSimulator/Debug/UserValidation.Updated.iOS.exe
-/Users/absp823/Documents/XamarinProjects/NS.Assignment/UserValidation.Updated/UserValidation.Updated.iOS/obj/iPhoneSimulator/Debug/UserValidation.Updated.iOS.pdb
 /Users/absp823/Documents/XamarinProjects/NS.Assignment/UserValidation.Updated/UserValidation.Updated.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.3/ibtool/_BundleResourceWithLogicalName.items
 /Users/absp823/Documents/XamarinProjects/NS.Assignment/UserValidation.Updated/UserValidation.Updated.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.3/actool/_PartialAppManifest.items
 /Users/absp823/Documents/XamarinProjects/NS.Assignment/UserValidation.Updated/UserValidation.Updated.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.3/actool/_BundleResourceWithLogicalName.items
 /Users/absp823/Documents/XamarinProjects/NS.Assignment/UserValidation.Updated/UserValidation.Updated.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.3/coremlc/_PartialAppManifest.items
 /Users/absp823/Documents/XamarinProjects/NS.Assignment/UserValidation.Updated/UserValidation.Updated.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.3/coremlc/_BundleResourceWithLogicalName.items
 /Users/absp823/Documents/XamarinProjects/NS.Assignment/UserValidation.Updated/UserValidation.Updated.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.3/optimized/
+/Users/absp823/Documents/XamarinProjects/NS.Assignment/UserValidation.Updated/UserValidation.Updated.iOS/obj/iPhoneSimulator/Debug/UserValidation.Updated.iOS.csprojAssemblyReference.cache
+/Users/absp823/Documents/XamarinProjects/NS.Assignment/UserValidation.Updated/UserValidation.Updated.iOS/obj/iPhoneSimulator/Debug/UserValidation.Updated.iOS.csproj.CoreCompileInputs.cache
+/Users/absp823/Documents/XamarinProjects/NS.Assignment/UserValidation.Updated/UserValidation.Updated.iOS/obj/iPhoneSimulator/Debug/XamlC.stamp
+/Users/absp823/Documents/XamarinProjects/NS.Assignment/UserValidation.Updated/UserValidation.Updated.iOS/obj/iPhoneSimulator/Debug/UserValidation.Updated.iOS.csproj.CopyComplete
+/Users/absp823/Documents/XamarinProjects/NS.Assignment/UserValidation.Updated/UserValidation.Updated.iOS/obj/iPhoneSimulator/Debug/UserValidation.Updated.iOS.exe
+/Users/absp823/Documents/XamarinProjects/NS.Assignment/UserValidation.Updated/UserValidation.Updated.iOS/obj/iPhoneSimulator/Debug/UserValidation.Updated.iOS.pdb

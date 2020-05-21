@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 
 namespace UserValidation.Updated.SAIDValidator
 {
@@ -43,8 +42,15 @@ namespace UserValidation.Updated.SAIDValidator
                 }
 
                 int EvenSum = GetEvenSum(EvenDigits);
-                var CheckNumber = 10 - ((OddSum + EvenSum) % 10);
-                flag = CheckNumber == lastdigit;
+                var CheckSum = 10 - ((OddSum + EvenSum) % 10);
+
+                if(CheckSum == lastdigit)
+                {
+                    var DobDigits = number.Substring(0, 6);
+                    flag = InputStringValidator.ValidateDateOfBirth(DobDigits);
+                    return flag;
+                }
+                
                 return flag;                
             }
 
@@ -68,6 +74,7 @@ namespace UserValidation.Updated.SAIDValidator
             }
 
             return sum;
-        }        
+        }
+       
     }    
 }

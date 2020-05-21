@@ -1,28 +1,22 @@
 ﻿<Properties StartupConfiguration="{B61AC65F-75C1-420D-AF83-E1BE2AE20D51}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="UserValidation.Updated/SA-IDValidator/InputStringValidator.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UserValidation.Updated/ViewModels/UserDetailsViewModel/UserDetailsPageViewModel.cs">
     <Files>
       <File FileName="UserValidation.Updated/ViewModels/LandingViewModel/LandingPageViewModel.cs" Line="91" Column="129" IsPinned="True" />
-      <File FileName="UserValidation.Updated/SA-IDValidator/IDNumberValidator.cs" Line="51" Column="1" />
-      <File FileName="UserValidation.Updated/Gateway/API/GetUserDetails.cs" Line="32" Column="1" />
-      <File FileName="UserValidation.Updated/SA-IDValidator/InputStringValidator.cs" Line="6" Column="8" />
+      <File FileName="UserValidation.Updated/SA-IDValidator/IDNumberValidator.cs" Line="54" Column="18" />
+      <File FileName="UserValidation.Updated/SA-IDValidator/InputStringValidator.cs" Line="1" Column="1" />
+      <File FileName="UserValidation.Updated/Gateway/API/GetUserDetails.cs" />
+      <File FileName="UserValidation.Updated/ViewModels/UserDetailsViewModel/UserDetailsPageViewModel.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="UserValidation.Updated" expanded="True">
             <Node name="UserValidation.Updated" expanded="True">
-              <Node name="SA-IDValidator" expanded="True">
-                <Node name="InputStringValidator.cs" selected="True" />
-              </Node>
               <Node name="ViewModels" expanded="True">
-                <Node name="LandingViewModel" expanded="True" />
+                <Node name="UserDetailsViewModel" expanded="True">
+                  <Node name="UserDetailsPageViewModel.cs" selected="True" />
+                </Node>
               </Node>
-              <Node name="Views" expanded="True">
-                <Node name="LandingPage" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="UserValidation.Updated.UITests" expanded="True">
-              <Node name="ViewModels" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -39,7 +33,6 @@
       <Breakpoint file="/Users/absp823/Documents/XamarinProjects/NS.Assignment/UserValidation.Updated/UserValidation.Updated.UITests/LandingPageViewModelTests.cs" relfile="UserValidation.Updated.UITests/LandingPageViewModelTests.cs" line="10" column="1" />
       <Catchpoint exceptionName="System.Exception" includeSubclasses="True" />
       <Breakpoint file="/Users/absp823/Documents/XamarinProjects/NS.Assignment/UserValidation.Updated/UserValidation.Updated/Gateway/API/HttpRequestHandler.cs" relfile="UserValidation.Updated/Gateway/API/HttpRequestHandler.cs" line="17" column="1" />
-      <Breakpoint file="/Users/absp823/Documents/XamarinProjects/NS.Assignment/UserValidation.Updated/UserValidation.Updated/SA-IDValidator/IDNumberValidator.cs" relfile="UserValidation.Updated/SA-IDValidator/IDNumberValidator.cs" line="74" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

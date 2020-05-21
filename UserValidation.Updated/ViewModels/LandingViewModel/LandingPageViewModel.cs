@@ -84,11 +84,11 @@ namespace UserValidation.Updated.ViewModels.LandingViewModel
         {
             if(IDNumberValidator.ValidateId(IDNumber))
             {
-                await DependencyService.Get<AlertService>().ShowErrorAsync("This is a valid south african ID Number", "Information", "OK");
+                await DependencyService.Get<AlertService>().ShowErrorAsync("This is a valid South African ID Number", "Information", "OK");
             }
             else
             {
-                await DependencyService.Get<AlertService>().ShowErrorAsync("This is not a south african ID Number", "Information", "OK");
+                await DependencyService.Get<AlertService>().ShowErrorAsync("This is not a valid South African ID Number", "Information", "OK");
             }
         }
 
