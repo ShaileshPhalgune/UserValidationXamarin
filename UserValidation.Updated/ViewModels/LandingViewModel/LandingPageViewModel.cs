@@ -18,6 +18,46 @@ namespace UserValidation.Updated.ViewModels.LandingViewModel
         public UserDataModel DataModel;
         public INavigationn _service { get; set; }
 
+        public string IDDescription
+        {
+            get { return _IdAuthentic; }
+            set
+            {
+                _IdAuthentic = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public string DateOfBirth
+        {
+            get { return _DateOfBirth; }
+            set
+            {
+                _DateOfBirth = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public string Gender
+        {
+            get { return _Gender; }
+            set
+            {
+                _Gender = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public string SACitizen
+        {
+            get { return _SACitizen; }
+            set
+            {
+                _SACitizen = value;
+                OnPropertyChanged();
+            }
+        }
+
         public string IDNumber
         {
             get { return _IdNumber; }
@@ -27,14 +67,53 @@ namespace UserValidation.Updated.ViewModels.LandingViewModel
                 OnPropertyChanged();
             }
         }
-
-        private bool isBusy;
+        
         public bool IsBusy
         {
             get => isBusy;
             set
             {
                 isBusy = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public bool IsIDValid
+        {
+            get => _isIdValid;
+            set
+            {
+                _isIdValid = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public bool IsDOBValid
+        {
+            get => isDOBValid;
+            set
+            {
+                isDOBValid = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public bool IsGenderValid
+        {
+            get => isGenderValid;
+            set
+            {
+                isGenderValid = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public bool IsValidSACitizen
+        {
+            get => isValidSACitizen;
+            set
+            {
+                isValidSACitizen = value;
                 OnPropertyChanged();
             }
         }
@@ -82,14 +161,17 @@ namespace UserValidation.Updated.ViewModels.LandingViewModel
 
         public async void ValidateIdNumber()
         {
-            if(IDNumberValidator.ValidateId(IDNumber))
+            
+
+            if(!IDNumberValidator.ValidateId(IDNumber, this))
             {
-                await DependencyService.Get<AlertService>().ShowErrorAsync("This is a valid South African ID Number", "Information", "OK");
-            }
-            else
-            {
+                IsDOBValid = false;
+                IsIDValid = false;
+                isGenderValid = false;
+                IsValidSACitizen = false;
+
                 await DependencyService.Get<AlertService>().ShowErrorAsync("This is not a valid South African ID Number", "Information", "OK");
-            }
+            }            
         }
 
         #endregion
@@ -97,7 +179,18 @@ namespace UserValidation.Updated.ViewModels.LandingViewModel
         #region FIELDS
 
         private string _IdNumber;
-        
+        private string _IdAuthentic;
+        private string _DateOfBirth;
+        private string _Gender;
+        private string _SACitizen;
+
+        private bool isBusy;
+        private bool _isIdValid;
+        private bool isDOBValid;
+        private bool isGenderValid;
+        private bool isValidSACitizen;
+
+
         #endregion
     }
 }

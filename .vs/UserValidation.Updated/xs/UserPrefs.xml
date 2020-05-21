@@ -1,20 +1,25 @@
 ﻿<Properties StartupConfiguration="{B61AC65F-75C1-420D-AF83-E1BE2AE20D51}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="UserValidation.Updated/ViewModels/UserDetailsViewModel/UserDetailsPageViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UserValidation.Updated/Views/LandingPage/LandingPage.xaml">
     <Files>
-      <File FileName="UserValidation.Updated/ViewModels/LandingViewModel/LandingPageViewModel.cs" Line="91" Column="129" IsPinned="True" />
-      <File FileName="UserValidation.Updated/SA-IDValidator/IDNumberValidator.cs" Line="54" Column="18" />
-      <File FileName="UserValidation.Updated/SA-IDValidator/InputStringValidator.cs" Line="1" Column="1" />
-      <File FileName="UserValidation.Updated/Gateway/API/GetUserDetails.cs" />
-      <File FileName="UserValidation.Updated/ViewModels/UserDetailsViewModel/UserDetailsPageViewModel.cs" Line="1" Column="1" />
+      <File FileName="UserValidation.Updated/SA-IDValidator/IDNumberValidator.cs" Line="59" Column="81" />
+      <File FileName="UserValidation.Updated/SA-IDValidator/IDParameterParser.cs" Line="12" Column="42" />
+      <File FileName="UserValidation.Updated/ViewModels/LandingViewModel/LandingPageViewModel.cs" Line="81" Column="30" />
+      <File FileName="UserValidation.Updated/Views/LandingPage/LandingPage.xaml" Line="19" Column="116" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="UserValidation.Updated" expanded="True">
             <Node name="UserValidation.Updated" expanded="True">
+              <Node name="SA-IDValidator" expanded="True" />
               <Node name="ViewModels" expanded="True">
-                <Node name="UserDetailsViewModel" expanded="True">
-                  <Node name="UserDetailsPageViewModel.cs" selected="True" />
+                <Node name="BaseViewModel" expanded="True" />
+                <Node name="LandingViewModel" expanded="True" />
+                <Node name="UserDetailsViewModel" expanded="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="LandingPage" expanded="True">
+                  <Node name="LandingPage.xaml" selected="True" />
                 </Node>
               </Node>
             </Node>

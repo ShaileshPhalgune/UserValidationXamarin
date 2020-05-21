@@ -14,5 +14,12 @@
             <Button Text="Validate SA User" HorizontalOptions="FillAndExpand" BackgroundColor ="DarkCyan" TextColor="White" Margin="0,50,0,0" Command="{Binding IdValidationCommand}" />
             </StackLayout>
         </StackLayout>
+        <StackLayout Margin="0,30,0,0" HorizontalOptions="Center" Spacing="10">
+            <!--<Label TextColor="Black" FontSize="Medium" Text="{Binding IdAuthentic}" IsVisible="{Binding IsIDValid}"/> -->
+            <Label TextColor="Black" FontSize="Medium" Text="{Binding IDDescription}" IsVisible="{Binding IsIDValid}"/>
+            <Label TextColor="Black" FontSize="Medium" Text="{Binding DateOfBirth}" IsVisible="{Binding IsDOBValid}"/>
+            <Label TextColor="Black" FontSize="Medium" Text="{Binding Gender}" IsVisible="{Binding IsGenderValid}"/>
+            <Label TextColor="Black" FontSize="Medium" Text="{Binding SACitizen}" IsVisible="{Binding IsValidSACitizen}"/>
+        </StackLayout>
     </StackLayout>
 </ContentPage>

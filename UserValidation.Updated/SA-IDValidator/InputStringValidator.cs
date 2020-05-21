@@ -23,9 +23,9 @@ namespace UserValidation.Updated.SAIDValidator
             return false;
         }
 
-        public static bool ValidateDateOfBirth(string dateInString)
+        public static bool ValidateDateOfBirth(string DateInString)
         {
-            return DateTime.TryParseExact(dateInString, "yyMMdd", CultureInfo.InvariantCulture, DateTimeStyles.AssumeLocal, out _);
-        }
+            return DateTime.TryParseExact(DateInString, "yyMMdd", CultureInfo.InvariantCulture, DateTimeStyles.AssumeLocal, out _);
+        }        
     }
 }

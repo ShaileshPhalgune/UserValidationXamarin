@@ -1,12 +1,15 @@
 ﻿using System;
+using UserValidation.Updated.ViewModels.BaseViewModel;
+using UserValidation.Updated.ViewModels.LandingViewModel;
 
 namespace UserValidation.Updated.SAIDValidator
 {
     public static class IDNumberValidator
     {
-        public static bool ValidateId(string number)
+        public static bool ValidateId(string number, LandingPageViewModel ViewModel)
         {
             bool flag = false;
+            LandingPageViewModel _viewmodel = ViewModel;
 
             number = InputStringValidator.RemovingWhiteSpaces(number);
 
@@ -43,15 +46,35 @@ namespace UserValidation.Updated.SAIDValidator
 
                 int EvenSum = GetEvenSum(EvenDigits);
                 var CheckSum = 10 - ((OddSum + EvenSum) % 10);
+                var DobDigits = number.Substring(0, 6);
 
-                if(CheckSum == lastdigit)
+                var IDValid = CheckSum == lastdigit;
+                var DateValid = InputStringValidator.ValidateDateOfBirth(DobDigits);
+
+                if (IDValid && DateValid)
                 {
-                    var DobDigits = number.Substring(0, 6);
-                    flag = InputStringValidator.ValidateDateOfBirth(DobDigits);
+                    flag = true;
+
+                    _viewmodel.IsIDValid = true;
+                    _viewmodel.IDDescription = string.Format( "ID Status : Valid ID Number");
+
+                    _viewmodel.IsDOBValid = true;
+                    _viewmodel.DateOfBirth = string.Format("Date Of Birth : {0}", IDParameterParser.GenerateDate(DobDigits));
+
+                    _viewmodel.IsGenderValid = true;
+                    var Gender = IDParameterParser.GetGender(digitArray[6]);
+                    _viewmodel.Gender = string.Format("Gender : {0}", Gender);
+
+                    _viewmodel.IsValidSACitizen = true;
+                    var Citizen = IDParameterParser.GetCitizenShipStatus(digitArray[10]);
+                    _viewmodel.SACitizen = string.Format("Citizenship Status : {0}", Citizen);
+
                     return flag;
                 }
-                
-                return flag;                
+                else
+                {
+                    return flag;
+                }                
             }
 
             return flag;
@@ -74,7 +97,6 @@ namespace UserValidation.Updated.SAIDValidator
             }
 
             return sum;
-        }
-       
+        }       
     }    
 }
